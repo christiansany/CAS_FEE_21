@@ -737,6 +737,11 @@ p {
   border: 1px solid #abcdef; /* Blauish */
 }
 ```
+
+**Hilfreiche Links**
+
+* [RGB Colour Mixer](https://csfieldguide.org.nz/en/interactives/rgb-mixer/)
+
 ### Practice 🔥
 
 Öffne diese [**CodeSandbox**](https://codesandbox.io/s/ycdcv) als Startpunkt.
