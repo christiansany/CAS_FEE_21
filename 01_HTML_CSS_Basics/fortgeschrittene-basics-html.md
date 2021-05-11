@@ -25,7 +25,7 @@ Die Übungen bauen immer aufeinander auf. Aber keine Angst! Für den Fall, dass 
 ## Formulare und Eingabefelder
 
 Formulare werden genutzt, um Daten oder auch Dateien zu übermitteln.  
-Die Datenverarbeitung passiert anschliessend auf dem Server mit einer serverseitigen Programmiersprache wie PHP, Python, JavaScript usw.
+Die Datenverarbeitung passiert anschliessend auf dem Server mit einer serverseitigen Programmiersprache wie PHP, Python, JavaScript etc.
 
 ### Aufbau
 
@@ -85,7 +85,7 @@ Spezielle Attribute für Formularfelder:
   * `date`: Zeigt einen Datepicker an und formatiert die Value in einem bestimmten Format
   * `radio`:
   * `checkbox`:
-  * etc ... https://www.w3schools.com/tags/att_input_type.asp
+  * [etc ...](https://www.w3schools.com/tags/att_input_type.asp)
 * Per `value`-Attribut kann das Inputfeld vorabgefüllt werden
 * Per `placeholder`-Attribut kann ein temporärer Wert angezeigt werden, solange das Inputfeld *leer* ist
 * Mit dem `required`-Attribut, kann ein Feld als Pflichtfeld gekennzeichnet werden. Das Formular kann anschliessend nicht mehr verschickt werden, solange dieses Feld nicht ausgefüllt ist
@@ -97,12 +97,12 @@ Spezielle Attribute für Formularfelder:
 
 <input type="text" name="vorname" value="" required placeholder="Angezeigt wenn leer">
 
-<input type="text" name="" value="">
-<input type="email" name="" value="">
-<input type="number" name="" value="">
-<input type="date" name="" value="">
-<input type="radio" name="" value="">
-<input type="checkbox" name="" value="">
+<input type="text" name="namea" value="">
+<input type="email" name="nameb" value="">
+<input type="number" name="namec" value="">
+<input type="date" name="named" value="">
+<input type="radio" name="namee" value="">
+<input type="checkbox" name="namef" value="">
 <!-- usw. -->
 ```
 
@@ -186,14 +186,15 @@ Textareas eignen sich für grössere Fliesstexte, wie eine Beschreibung oder ein
 ### Hilfreiches
 
 Mehr zu Formularen/Eingabefeldern und deren Funktionen unter:
-* https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms
-* https://www.w3schools.com/html/html_forms.asp
+* [Web forms — Working with user data](https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms)
+* [HTML Forms — w3schools](https://www.w3schools.com/html/html_forms.asp)
 
 ### Practice 🔥
 
 Öffne diese [**CodeSandbox**](https://codesandbox.io/s/82lki) als Startpunkt.
 
-- [ ] Fügt das JavaScript von der Startsandbox bei euch ein (falls eine eigene Codesandbox verwendet wird)
+- [ ] Fügt das JavaScript von der Startsandbox bei euch ein (falls eine eigene Codesandbox verwendet wird).  
+  Wer das JavaScript selber schreiben will, kann einen EventListener auf das submit-Event setzen und der handler sollte alle values in einem alert anzeigen.
 - [ ] Erstelle ein Formular mit vier Feldern
   - [ ] Ein Titelfeld. Vergib dem Feld die `id="title"`
   - [ ] Eine Textarea für die Beschreibung. Vergib dem Feld die `id="description"`

@@ -37,7 +37,7 @@ Bei einem normalen Layout mit Block-Elementen sind alle Elemente untereinander, 
 * Flexbox kann mit der CSS-Deklaration `display: flex;` genutzt werden
 * `display: flex;` wird auf einem gemeinsamen Eltern-Element gesetzt
 * Dieses Eltern-Element wird dann auch der **Flex-Container** genannt
-* Kinder-Elemente erhalten dadurch einen Flex-Context und werden nun per default als Inline-Elemente nebeneinander dargestellt
+* Kinder-Elemente erhalten dadurch einen **Flex-Context** und werden nun per default als Inline-Elemente nebeneinander dargestellt
 
 **Beispiele**
 
@@ -170,6 +170,7 @@ Hier eine kleine Demo wie die Properties zusammen funktionieren.
 
 #### Flex
 
+* Die `flex`-Property kann auf einem Element platziert werden, welche einen **Flex-Context** hat (Elternelement muss `display: flex;` haben)
 * Die `flex`-Property ist ein Shorthand für `flex-grow`, `flex-shrink` und `flex-basis`
 * `flex-basis` definiert, wie gross das Element per default sein kann (%-Wert der Main Axis)
 * `flex-grow` definiert, ob und in welcher Relation das Element grösser sein kann als die flex-basis
@@ -210,12 +211,12 @@ Hier eine kleine Demo wie die Properties zusammen funktionieren.
 
 [Caniuse - Flexbox](https://caniuse.com/#search=css%20flexbox)
 
-**Hilfreiche Links**
+**Hilfreiche Links** 
 
 * [CSS Tricks Artikel](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
-* [Spielerisch lernen](https://flexboxfroggy.com/)
 * [Freecodecamp Artikel](https://medium.freecodecamp.org/an-animated-guide-to-flexbox-d280cf6afc35)
-* [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout)
+* [CSS Flexible Box Layout - MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout)
+* [Spielerisch lernen](https://flexboxfroggy.com/)
 
 ### CSS Grid
 
@@ -231,7 +232,7 @@ Nachteile:
 * IE11 Support ist nicht vollständig
 
 Da dieses Thema sehr gross ist, sind in diesem Script **nur** die Basics zu finden.  
-Für mehr Informationen, bitte die folgenden hilfreichen Links beachten.
+Für mehr Informationen, bitte die nachfolgenden hilfreichen Links beachten.
 
 #### Template Columns
 
@@ -359,9 +360,9 @@ Mit `grid-template-rows` können wir die Höhen der Rows steuern. Dies funktioni
 **Hilfreiche Links**
 
 * [CSS Tricks Artikel](https://css-tricks.com/snippets/css/complete-guide-grid/)
-* [Spielerisch lernen](https://cssgridgarden.com/)
 * [Cheatsheet](http://grid.malven.co/)
-* [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout)
+* [CSS Grid Layout - MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout)
+* [Spielerisch lernen](https://cssgridgarden.com/)
 
 ### Practice 🔥
 
@@ -531,6 +532,12 @@ body {
 * [Custom Fonts - Loading Strategies](https://www.zachleat.com/web/comprehensive-webfonts/)
 * [Google Fonts herunterladen](https://google-webfonts-helper.herokuapp.com/)
 
+> **Das Wichtigste in Kürze**
+>  
+> * Custom Fonts werden in allen aktuellen Browsern unterstützt (sogar im IE11)
+> * Es gibt verschiedene Möglichkeiten diese hinzuzufügen, lokale Schriften sind immer zu bevorzugen
+> * ACHTUNG: Wenn der Browser die Schriften anwendet, verursacht dies ein Repaint/Reflow der Website
+
 ### Practice 🔥
 
 Öffne diese [**CodeSandbox**](https://codesandbox.io/s/2eylr) als Startpunkt.
@@ -540,12 +547,6 @@ body {
 Zeit: ~ 5 min
 
 **Solution**: [https://codesandbox.io/s/i3nb9](https://codesandbox.io/s/i3nb9)
-
-> **Das Wichtigste in Kürze**
->  
-> * Custom Fonts werden in allen aktuellen Browsern unterstützt (sogar im IE11)
-> * Es gibt verschiedene Möglichkeiten diese hinzuzufügen, lokale Schriften sind immer zu bevorzugen
-> * ACHTUNG: Wenn der Browser die Schriften anwendet, verursacht dies ein Repaint/Reflow der Website
 
 ## CSS Variablen
 
@@ -614,7 +615,7 @@ p {
 
 ![CSS Variablen Support](./assets/custom-properties-browser-support.png)
 
-[Caniuse - CSS Variables](https://caniuse.com/#search=css%20variables)
+[Caniuse - CSS Variables (Custom Properties)](https://caniuse.com/?search=css%20custom%20properties)
 
 ### Practice 🔥
 
