@@ -9,8 +9,7 @@
 
 ## Setup
 
-TODO: Supports queries hinzufügen
-TODO: Demos hinzufügen wo sinnvoll
+TODO: Supports queries hinzufügen falls zeitlich drin liegt
 
 Für Übungen nutzen wir die folgende **CodeSandbox** als Startpunkt:
 
