@@ -9,8 +9,6 @@
 
 ## Setup
 
-TODO: Supports queries hinzufügen falls zeitlich drin liegt
-
 Für Übungen nutzen wir die folgende **CodeSandbox** als Startpunkt:
 
 **[https://codesandbox.io/s/j611l](https://codesandbox.io/s/j611l)**
@@ -315,3 +313,21 @@ Zeit: ~ 5 min
 * [Complete Guide to Responsive Images!](https://medium.com/@elad/a-complete-guide-for-responsive-images-b13db359c6c7)
 * [Accessible, Simple, Responsive Tables](https://css-tricks.com/accessible-simple-responsive-tables/)
 * [Responsive web design tricks and tips](https://webflow.com/blog/responsive-web-design-tricks-and-tips)
+
+**Einschub: Feature-Queries** 👀
+
+Mit `@supports` kann man prüfen, ob bestimmte Deklarationen unterstützt werden.
+
+**Beispiele**
+
+```css
+@supports (display: grid) {
+  .grid-container {
+    /* display: grid; can be used here */
+  }
+}
+```
+
+**Hilfreiche Links**
+
+* [Feature Queries Spezifikation (official)](https://www.w3.org/TR/css-conditional-3/#at-ruledef-supports)
