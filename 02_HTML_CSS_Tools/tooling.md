@@ -12,13 +12,9 @@
 
 Taskrunners haben dabei den Ansatz, dass sie mehr Stream-basiert funktionieren. In einem Task wird ein bestimmter Input (Dateien) gegeben, dieser wird dann in verschiedenen Prozessen verarbeitet und ergibt am Schluss wieder einen Output.
 
-Bundler haben eher einen konfigurativen approach. Was passieren soll, wird nicht Schritt für Schritt angegeben, sondern man stellt eine kleine bis sehr grosse und komplizierte **Konfiguration** zusammen, die danach vorgibt, was der Bundler alles machen kann/soll. Am Anfang wurden Bundler 'nur' für das Zusammensetzen von Dateien genutzt. Dementsprechend wurden mehrere Dateien zu einer Datei zusammengeführt, daher der Name Bundler. Inzwischen sind Bundler sehr viel potenter geworden, sodass Taskrunner fast nicht mehr genutzt werden. Alles was früher der Taskrunner 'besser' konnte als ein Bundler (z.B. aufbereiten von Bilddateien, generieren von Icon-Sprites oder SVG-Sprite usw.), kann nun ebenfalls in einem Bundler gemacht werden. Daher werden wir heute nur die Bundler genauer anschauen am Beispiel von [Webpack](https://webpack.js.org/)
-
-Taskrunner werden heute nicht mehr oft genutzt, daher werden wir diese heute leider nciht behandelt.
+Bundler haben eher einen konfigurativen Approach. Was passieren soll, wird nicht Schritt für Schritt angegeben, sondern man stellt eine kleine bis sehr grosse und komplizierte **Konfiguration** zusammen, die danach vorgibt, was der Bundler alles machen kann/soll. Am Anfang wurden Bundler 'nur' für das Zusammensetzen von Dateien genutzt. Dementsprechend wurden mehrere Dateien zu einer Datei zusammengeführt, daher der Name Bundler. Inzwischen sind Bundler sehr viel potenter geworden, sodass Taskrunner fast nicht mehr genutzt werden. Alles was früher der Taskrunner 'besser' konnte als ein Bundler (z.B. aufbereiten von Bilddateien, generieren von Icon-Sprites oder SVG-Sprite usw.), kann nun ebenfalls in einem Bundler gemacht werden. Daher werden wir heute nur die Bundler genauer anschauen am Beispiel von [Webpack](https://webpack.js.org/)
 
 ### Bundler (Webpack)
-
-// TODO: Webpack 5 reinnehmen und praktisches Beispiel erfassen
 
 > At its core, webpack is a static module bundler for modern JavaScript applications. When webpack processes your application, it internally builds a dependency graph which maps every module your project needs and generates one or more bundles.
 [Source](https://webpack.js.org/concepts/)
@@ -27,8 +23,8 @@ Taskrunner werden heute nicht mehr oft genutzt, daher werden wir diese heute lei
 
 **Installation**
 
-Im Gegensatz zu Gulp muss hier nichts global installiert werden. Wir können `webpack` und `webpack-cli` lokal installieren.
-Mit Webpack version 4.0 muss keine Konfigurationsdatei angegeben werden.
+Damit wir Webpack nutzen können, müssen wir `webpack` und `webpack-cli` lokal installieren.
+Mit Webpack version 5.0 muss keine Konfigurationsdatei angegeben werden.
 
 ```sh
 cd my/project/webpack-demo
@@ -52,10 +48,8 @@ npm install webpack webpack-cli --save-dev
 ```js
 // src/index.js
 function component() {
-  const element = document.createElement('div');
-
+  const element = document.createElement('h1');
   element.innerHTML = ['Hello', 'webpack'].join(' ');
-
   return element;
 }
 
@@ -64,14 +58,16 @@ document.body.appendChild(component());
 
 ```html
 <!-- dist/index.html -->
-<!doctype html>
-<html>
-  <head>
-    <title>Getting Started</title>
-  </head>
-  <body>
-    <script src="main.js"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Webpack Practice</title>
+  <script defer src="./main.js"></script>
+</head>
+<body>
+</body>
 </html>
 ```
 
@@ -88,7 +84,7 @@ npx webpack
 
 Anschliessend kann das `dist/index.html` im Browser geöffnet werden. Wenn alles funktioniert hat, sollte ein 'Hello webpack' ersichtlich sein.
 
-**Konfugirationsdatei**
+**Konfigurationsdatei**
 
 Die Konfigurationsdatei für Webpack hat normalerweise `webpack.config.js` als Dateiname. Es kann aber auch irgend ein Dateiname verwendet werden (falls der Dateiname vom default abweicht, muss dies beim Ausführen von Webpack noch als Parameter angeben werden).
 
@@ -107,7 +103,6 @@ module.exports = {
 
 **Webpack Loaders**
 
-Gulp verwendet spezifische Gulp-Plugins, Webpack verwendet sogenannte Loaders.
 Ein Loader definiert, was webpack mit einem gewissen Filetype machen soll.
 
 **Beispiel `babel-loader`**
@@ -164,7 +159,9 @@ module.exports = {
 * [Webpack Loaders](https://webpack.js.org/concepts/loaders/)
 * [Tutorial: How to set up React, webpack, and Babel from scratch](https://www.valentinog.com/blog/babel/)
 
-TODO: Kleine Übung erstellen für Webpack 5
+**Demo** 🤯
+
+- [Webpack Demo](https://github.com/christiansany/webpack-demo)
 
 ## Nützliche Plugins/Loaders & Packages
 
@@ -262,6 +259,20 @@ Loader: https://webpack.js.org/loaders/eslint-loader/
 **Hilfreiche Links**
 
 * [Liste von Loader](https://webpack.js.org/loaders/)
+
+### Practice 🔥
+
+Klone das Repository der Demo [**Webpack Demo**](https://github.com/christiansany/webpack-demo) als Startpunkt.  
+_Die Zeit reicht bei Weitem nicht aus um alles umzusetzen. Wähle das, was Dich am meisten interessiert_
+
+- [ ] Analysiere das `package.json` um zu sehen welche npm scripts das es gibt
+- [ ] Beobachte die Unterschiede im generierten Bundle wenn du `npm run build` bzw. `npm run build:prod` ausführst
+- [ ] Aktiviere den `style-loader` & `css-loader` in der Webpack-Konfiguration und importiere das CSS im `index.js`, damit die Styles verwendet werden
+- [ ] Aktiviere den `babel-loader` in der Webpack-Konfiguration, sodass unser JavaScript zu einer älteren Version transpiliert wird (schau Dir das generierte JavaScript am Schluss an)
+- [ ] Aktiviere Source-Maps, damit wir unsere originalen JavaScript-Dateien im Browser ansehen können (achte nach dem Aufstarten des Dev-Server, von welchen Dateien die `console.log()` ausgeführt werden)
+- [ ] Aktiviere das Hot Module Replacement (HRM)
+
+Zeit: ~ 10 min
 
 ## SASS/SCSS Deepdive
 
@@ -798,6 +809,3 @@ a {
 }
 ```
 </details>
-
-// TODO: Beispiele Machen für css modules oder styled components
-// TODO: Eventuell beispiel von nativen css modules reinnehmen, falls noch Platz hat

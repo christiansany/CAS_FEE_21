@@ -92,10 +92,10 @@ Angular
 
 > **Das Wichtigste in Kürze**
 >  
-> * Frontend-Frameworks sind dazu da, dem Developer das Leben zu vereinfachen und einen gewissen Kickstart zu geben für ein neues Projekt.
-> * Sie bieten meist verschiedenste Komponenten, die man nutzen kann.
-> * Meist ist das Einbinden eines Frontend-Frameworks eine grosse Entscheidung, die auch mit Negativem verbunden ist (z.B. festgelegte CSS Naming Convention).
-> * JavaScript Libraries und Frameworks haben öfters ihre eigene spezifische Implementation eines Frontend-Frameworks
+> * Frontend-Frameworks sind dazu da, dem Developer das Leben zu vereinfachen und einen gewissen Kickstart für ein neues Projekt zu geben
+> * Sie bieten meist verschiedenste Komponenten an, die man genutzt werden können
+> * Meist ist das Einbinden eines Frontend-Frameworks eine grosse Entscheidung, die auch mit Negativem verbunden ist (z.B. festgelegte CSS Naming Convention)
+> * JavaScript Libraries und Frameworks haben oft ihre eigene spezifische Implementation eines Frontend-Frameworks
 
 ## Practice 🔥
 

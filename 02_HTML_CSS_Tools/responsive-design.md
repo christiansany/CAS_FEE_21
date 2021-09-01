@@ -40,9 +40,9 @@ Dafür gibt es einen `meta`-Tag, den man nutzen kann.
 |---|---|---|
 |`width`|Positiver Integer oder der Wert `device-width`|Definiert die Breite des Viewports in `px`|
 |`height`|Positiver Integer oder der Wert `device-height`|Definiert die Höhe des Viewports in `px`|
-|`initial-scale`|Positiver Nummer zwischen `0.0` und `10.0`|Definiert das initiale Verhältnis zwischen Device und Viewport|
-|`minimum-scale`|Positiver Nummer zwischen `0.0` und `10.0`|Definiert den minimalen Zoom|
-|`maximum-scale`|Positiver Nummer zwischen `0.0` und `10.0`|Definiert den maximalen Zoom|
+|`initial-scale`|Positive Nummer zwischen `0.0` und `10.0`|Definiert das initiale Verhältnis zwischen Device und Viewport|
+|`minimum-scale`|Positive Nummer zwischen `0.0` und `10.0`|Definiert den minimalen Zoom|
+|`maximum-scale`|Positive Nummer zwischen `0.0` und `10.0`|Definiert den maximalen Zoom|
 |`user-scalable`|`yes` (default) oder `no`|Bei `no` kann der User die Website nicht zoomen|
 
 **Achtung Antipattern** 🚫
@@ -164,7 +164,7 @@ Am meisten werden jeweils `min-*` und `max-*` genutzt.
 
 **Best Practises** ✅
 
-Alle *dimension* Features unterstützen die regulären CSS Units wie `px`, `em`, usw. Es ist jedoch empfohlen, dass innerhalb von Media-Queries `px` genutzt wird. Dadurch werden zwar User benachteiligt, welche die default `font-size` ihres Browsers angepasst haben, da `px` nicht damit skaliert. Jedoch gibt es einen Bug unter Safari, welches `em` in Media-Queries nicht richtig berechnet, wenn der User gleichzeitig einen aktiven Zoom hat. Hier der [Bug als Demo](https://codesandbox.io/s/demo-safari-em-yvoft?file=/index.html).
+Alle *dimension* Features unterstützen die regulären CSS Units wie `px`, `em`, usw. Es wird jedoch empfohlen, dass innerhalb von Media-Queries `px` genutzt wird. Dadurch werden User benachteiligt, welche die default `font-size` ihres Browsers angepasst haben, da `px` nicht damit skaliert. Jedoch gibt es einen Bug im Safari, welches `em` in Media-Queries nicht richtig berechnet, wenn der User gleichzeitig einen aktiven Zoom hat. Hier der [Bug als Demo](https://codesandbox.io/s/demo-safari-em-yvoft?file=/index.html).
 
 **Hilfreiche Links**
 
