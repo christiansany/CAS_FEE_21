@@ -21,4 +21,19 @@ const { mdToPdf } = require('md-to-pdf');
     { path: './01_HTML_CSS_Basics/fortgeschrittene-basics-html.md' },
     { dest: './01_HTML_CSS_Basics/dist/fortgeschrittene-basics-html.pdf' }
   ).catch(console.error);
+
+  await mdToPdf(
+    { path: './02_HTML_CSS_Tools/responsive-design.md' },
+    { dest: './02_HTML_CSS_Tools/dist/responsive-design.pdf' }
+  ).catch(console.error);
+
+  await mdToPdf(
+    { path: './02_HTML_CSS_Tools/tooling.md' },
+    { dest: './02_HTML_CSS_Tools/dist/tooling.pdf' }
+  ).catch(console.error);
+
+  await mdToPdf(
+    { path: './02_HTML_CSS_Tools/frontend-frameworks.md' },
+    { dest: './02_HTML_CSS_Tools/dist/frontend-frameworks.pdf' }
+  ).catch(console.error);
 })();
