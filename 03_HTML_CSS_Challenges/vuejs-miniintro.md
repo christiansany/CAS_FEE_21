@@ -16,7 +16,7 @@
 
 ## Quickstart
 
-Der einfachste Weg zum starten ist, Vue.js vom CDN einbinden, und los gehts.
+Der einfachste Weg zum starten ist, Vue.js vom CDN einbinden und los gehts.
 
 ```html
 <!-- Loading vue from a CDN -->
@@ -78,9 +78,8 @@ Vue.createApp(HelloVueApp).mount('#hello-vue')
 
 ## Dekleratives Rendering
 
-TODO
-Im Herzen von Vue ist ein System welches das deklarative rendering ermöglicht. Wie im ersten Beispiel ersichtlich, ist die Template Syntax einfach zu verstehen.
-Dabei sind unsere variablen [**reactive**](https://v3.vuejs.org/guide/reactivity.html). Dies bedeutet, dass alle Änderungen an unserem internen state selbständig im DOM updated werden.
+Im Herzen von Vue ist ein System, welches das Deklarative Rendering ermöglicht. Wie im ersten Beispiel ersichtlich, ist die Template Syntax einfach zu verstehen.
+Dabei sind unsere variablen [**reactive**](https://v3.vuejs.org/guide/reactivity.html). Dies bedeutet, dass alle Änderungen an unserem internen state selbständig im DOM angepasst werden.
 
 ```html
 <!-- html -->
@@ -112,9 +111,9 @@ Vue.createApp(Counter).mount('#counter')
 - [Dekleratives Rendering & Lifecycle hooks](https://codesandbox.io/s/4ff92)
 
 In dem Beispiel wird das DOM jede Sekunde mit dem neuen counter updated.  
-Hier auch zu sehen ist eine der [Lifecycle hooks](https://v3.vuejs.org/api/options-lifecycle-hooks.html) `mounted()`. Diese sind ähnlich wie z.B. `componendDidMount()` in React und können genutzt werden um Code auszuführen, wenn dieser Vue-Komponente den verwendeten Lebenszyklus durchläuft.
+Hier seht ihr eine der [Lifecycle hooks](https://v3.vuejs.org/api/options-lifecycle-hooks.html) `mounted()`. Diese sind ähnlich wie z.B. `componendDidMount()` in React und können genutzt werden um einen Code auszuführen, wenn eine Instanz dieser Vue-Komponente den angegebenen Lebenszyklus durchläuft.
 
-Zudem können wir auch unseren State auf den Attribut eines Elementes binden. Dies erreichen wir mit der `v-bind`-[Directive](https://v3.vuejs.org/api/directives.html). Dies gibt es auch als Kurzversion indem wir einfach nur `:` verwenden. Zu beachten ist, sobald wir eine Directive nutzen (generell immer `v-something`), schreiben wir JavaScript innerhalb der `""`.
+Zudem können wir auch unseren State auf den Attribut eines Elementes binden. Dies erreichen wir mit der `v-bind` [Directive](https://v3.vuejs.org/api/directives.html). Dies gibt es auch als Kurzversion indem wir einfach nur `:` verwenden. Zu beachten ist, sobald wir eine Directive nutzen (generell immer `v-something`), schreiben wir JavaScript innerhalb der `""`.
 
 ```html
 <!-- html -->
@@ -160,10 +159,10 @@ Vue.createApp(AttributeBinding).mount('#bind-attribute')
 
 ## User Input
 
-Die Events die von unserem UI abgeschossen werden können mit  der `v-on`-[Directive](https://v3.vuejs.org/api/directives.html) abgefangen werden.  
+Die Events, die von unserem UI abgeschossen werden, können mit der `v-on` [Directive](https://v3.vuejs.org/api/directives.html) abgefangen werden.  
 Auch hier gibt es eine gekürzte Version mit `@`.
 
-Im folgenden Beispiel ist zu sehen wie wir einen Counter über einen Button hochzählen. Dabei auch zu sehen ist das neue `methods`-Objekt. Dieses beinhaltet unsere **Methoden**, welche wir von anderen Methoden, unseren Lifecycle hooks oder auch von unserem Template aus ausrufen können.
+Im folgenden Beispiel ist zu sehen wie wir einen Counter über einen Button hochzählen. Dabei ist auch das neue `methods`-Objekt zu sehen. Dieses beinhaltet unsere **Methoden**, welche wir von anderen Methoden, unseren Lifecycle hooks oder auch von unserem Template aus ausrufen können.
 
 ```html
 <!-- html -->
@@ -199,7 +198,7 @@ Vue.createApp(EventHandling).mount('#event-handling')
 
 ### Two-Way Databinding
 
-Mit der `v-model` Directive können wir unseren State vom Komponenten direkt durch das UI manipulieren.
+Mit der `v-model` Directive können wir unseren State von den Komponenten direkt durch das UI manipulieren.
 
 ```html
 <!-- html -->
@@ -230,10 +229,10 @@ Vue.createApp(TwoWayBinding).mount('#two-way-binding')
 
 ### Konditionales Rendering
 
-Konditionales Rendering ist sehr einfach zu implementieren mit der `v-if` Directive. Diese kann ebenfalls mit [`v-else-if`](https://v3.vuejs.org/api/directives.html#v-else-if) und/oder `v-else` kombiniert werden. Bei der Verwendung dieser Directives wird das ELement aus dem DOM entfernt solange es nicht angezeigt wird.  
-Mit der `v-show` Directive kann ein Element lediglich ausgebländet werden mit `display: none;`, somit bleibt es im DOM vorhanden.
+Konditionales Rendering ist sehr einfach zu implementieren mit der `v-if` Directive. Diese kann ebenfalls mit [`v-else-if`](https://v3.vuejs.org/api/directives.html#v-else-if) und/oder `v-else` kombiniert werden. Bei der Verwendung dieser Directives wird das ELement aus dem DOM entfernt, solange es nicht angezeigt wird.  
+Mit der `v-show` Directive kann ein Element mit `display: none;` lediglich ausgeblendet werden. Somit bleibt es im DOM vorhanden.
 
-Die Elemente die dabei angezeigt bzw. ausgebländet werden können dazu animiert werden. Siehe dazu die Dokumentation für die [Transitions](https://v3.vuejs.org/guide/transitions-enterleave.html).
+Die Elemente die dabei angezeigt bzw. ausgeblendet werden, können dazu animiert werden. Siehe dafür die Dokumentation für die [Transitions](https://v3.vuejs.org/guide/transitions-enterleave.html).
 
 ```html
 <!-- html -->
@@ -263,7 +262,7 @@ Vue.createApp(ConditionalRendering).mount('#conditional-rendering')
 ### Loops
 
 Mit der `v-for` Directive können wir durch Arrays oder auch Objekte loopen. Dabei wir die Direktive auf dem Element angebracht, welches wiederholt werden soll.  
-Mehr zum Renderin von Listen findest Du [hier](https://v3.vuejs.org/guide/list.html).
+Mehr zum Rendering von Listen findest Du [hier](https://v3.vuejs.org/guide/list.html).
 
 ```html
 <!-- html -->
@@ -299,13 +298,13 @@ Vue.createApp(ListRendering).mount('#list-rendering')
 
 ## Components
 
-Vue.js ist gleich wie andere MV*-Frameworks so aufgebaut, dass man sein Widget/Webapp oder ähnliches in verschiedenen Komponenten aufsplitten kann. Diese kann man ebenfalls ineinander verschachteln.
+Vue.js ist gleich wie andere MV*-Frameworks aufgebaut, so dass man sein Widget/Webapp oder ähnliches in verschiedenen Komponenten aufsplitten kann. Diese können ebenfalls ineinander verschachtelt werden.
 
 ![Vue.js Komponenten](https://vuejs.org/images/components.png)
 
 *Source: https://vuejs.org/images/components.png*
 
-Das Registrieren eines Komponenten ist einfach, wir erstellen unsere Komponenten und registrieren diese in unserer App-Instanz, oder in anderen Komponenten. Das Registrieren wird über den `components` Key gemacht.
+Das Registrieren von Komponenten ist einfach. Wir erstellen unsere Komponenten und registrieren diese in unserer App-Instanz oder in anderen Komponenten. Das Registrieren wird über den `components` Key gemacht.
 
 ```html
 <!-- html -->
@@ -348,17 +347,17 @@ app.mount("#app")
 
 ### Practice 🔥
 
-Öffne diese [**CodeSandbox**](https://codesandbox.io/s/TODO) als Startpunkt.
+Öffne diese [**CodeSandbox**](https://codesandbox.io/s/uhkgt) als Startpunkt.
 
-- [ ] TODO
+Füge die fehlende Funktionalität hinzu, damit unsere Todo-App deployt werden kann.
  
 Zeit: ~ 15 min
 
-**Solution**: [https://codesandbox.io/s/TODO](https://codesandbox.io/s/TODO)
+**Solution**: [https://codesandbox.io/s/g5br9](https://codesandbox.io/s/g5br9)
 
 ## Vorteile von Vue.js
 
-Einer der grössten Vorteile von Vue.js gegenüber React ist, dass Vue.js auch ein bestehendes Template in eine Vue-Instanz umwandeln kann. Somit kann z.B. alles relevante HTML welches für SEO genützt wirde bereits von einem Server gerendert werden, ohne, dass wir Vue.js auf dem Server ausführen müssen. Dies hatten wir bei der Navigation von [css.ch](https://css.ch) zu usnerem Vorteil genutzt. Somit kontnen wir alle SEO-Anforderungen erfüllen, könnten jedoch alle JS-Funktionalität welche die Navigation benötigt mit Vue abwickeln. Wenn man den Soruce-Code von css.ch ansieht, ist dies gut zu sehen.
+Einer der grössten Vorteile von Vue.js gegenüber React ist, dass Vue.js auch ein bestehendes Template in eine Vue-Instanz umwandeln kann. Somit kann z.B. alles relevante HTML, welches für SEO genützt wurde, bereits von einem Server gerendert werden, ohne dass wir Vue.js auf dem Server ausführen müssen. Dies hatten wir bei der Navigation von [css.ch](https://css.ch) zu unserem Vorteil genutzt. Somit konnten wir alle SEO-Anforderungen erfüllen, konnten jedoch alle JS-Funktionalität, welche die Navigation benötigt, mit Vue abwickeln. Wenn man den Source-Code von css.ch ansieht, ist dies gut ersichtlich.
 
 ## Weiterführende Themen
 
