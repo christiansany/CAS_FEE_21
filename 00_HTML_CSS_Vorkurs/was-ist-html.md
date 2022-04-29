@@ -40,7 +40,7 @@ Die Übungen bauen immer aufeinander auf. Aber keine Angst! Für den Fall, dass 
 
 ### Syntax
 
-Offizielle Spezifikation: [https://www.w3.org/TR/2011/WD-html-markup-20110405/syntax.html#syntax-elements](https://www.w3.org/TR/2011/WD-html-markup-20110405/syntax.html#syntax-elements)
+Offizielle Spezifikation: [https://www.w3.org/TR/2011/WD-html-markup-20110405/syntax.html](https://www.w3.org/TR/2011/WD-html-markup-20110405/syntax.html)
 
 Elemente starten mit einem `<` gefolgt vom **Tagnamen**. Anschliessend kommen *optionale* **Attribute** und deren Values. Das Ende des Starttags ist mit einem `>` gekennzeichnet.  
 Danach kommt der **Inhalt** des Elementes.  
@@ -89,10 +89,10 @@ Es gibt auch sogenannte void elements. Diese haben keinen Inhalt und der Endtag 
 <p>In diesem Satz gibt es<br>einen line break</p>
 
 <!-- Image -->
-<img src='./monkey.jpg' alt="Monkey">
+<img src="./monkey.jpg" alt="Monkey">
 ```
 
-Liste von void-elements: https://html.spec.whatwg.org/#void-elements
+Liste von void-elements: [https://html.spec.whatwg.org/#void-elements](https://html.spec.whatwg.org/#void-elements)
 
 > **Das Wichtigste in Kürze**
 >  
@@ -149,134 +149,115 @@ Die Sprache der Website sollte auf dem `<html>`-Element angegeben werden, damit 
 * Darin befinden sich z.B. Verlinkungen von CSS-Dateien, JavaScript-Dateien oder auch Informationen für Roboter (Google, Facebook, Twitter usw.)
 
 <details>
-  <summary>Beispiel head von unic.com</summary>
+  <summary>Beispiel head von galaxus.ch</summary>
 
 ```html
-<head itemscope itemtype="http://schema.org/WebSite">
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-
-  <title>Digitalagentur in Zürich, Bern, München und Karlsruhe – seit 1996 - Unic</title>
-
-  <meta name="title" content="Digitalagentur in Zürich, Bern, München und Karlsruhe – seit 1996" />
-  <meta itemprop="name" content="Digitalagentur in Zürich, Bern, München und Karlsruhe – seit 1996" />
-  <meta name="twitter:title" content="Digitalagentur in Zürich, Bern, München und Karlsruhe – seit 1996" />
-  <meta property="og:title" content="Digitalagentur in Zürich, Bern, München und Karlsruhe – seit 1996" />
-  <meta name="keywords"
-    content=" Digitale Erlebnisse, E-Business-Lösungen, E-Business, Unic, Digitall Marketing, Digital Commerce, E-Commerce, " />
-  <meta name="description"
-    content="Unsere 230 Expertinnen und Experten konzipieren, entwickeln und hosten für Sie Ihre digitale Plattform. Kontaktieren Sie uns für Ihr nächstes Webprojekt!" />
-  <meta itemprop="description"
-    content="Unsere 230 Expertinnen und Experten konzipieren, entwickeln und hosten für Sie Ihre digitale Plattform. Kontaktieren Sie uns für Ihr nächstes Webprojekt!" />
-  <meta name="twitter:description"
-    content="Unsere 230 Expertinnen und Experten konzipieren, entwickeln und hosten für Sie Ihre digitale Plattform. Kontaktieren Sie uns für Ihr nächstes Webprojekt!" />
-  <meta property="og:description"
-    content="Unsere 230 Expertinnen und Experten konzipieren, entwickeln und hosten für Sie Ihre digitale Plattform. Kontaktieren Sie uns für Ihr nächstes Webprojekt!" />
-  <meta property="og:image"
-    content="https://www.unic.com/-/media/corporate/unic/70-job-header/job-headers-2019/unic-data-analyst-hs6a9332.jpg?la=de&mw=1920&vs=1&hash=F96C3AE9495506CBA11F5D9EDB67253BBFE76572" />
-  <meta property="twitter:image"
-    content="https://www.unic.com/-/media/corporate/unic/70-job-header/job-headers-2019/unic-data-analyst-hs6a9332.jpg?la=de&mw=1920&vs=1&hash=F96C3AE9495506CBA11F5D9EDB67253BBFE76572" />
-  <meta property="og:image:width" content="1920" />
-  <meta property="og:image:height" content="1080" />
-  <meta name="author" content="Unic" />
-  <meta name="twitter:creator" content="Unic" />
-  <meta name="robots" content="index follow" />
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-title" content="Unic">
-  <meta name="application-name" content="Unic">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="format-detection" content="telephone=no" />
+<head>
+  <meta charSet="utf-8" />
+  <meta content="index, follow" name="robots" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
-  <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
-  <link rel="manifest" href="/manifest.json">
-  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#7b7d7d">
-  <link rel="alternate" href="https://www.unic.com/de" hreflang="de" />
-  <link rel="alternate" href="https://www.unic.com/en" hreflang="en" />
-  <meta name="theme-color" content="#ffffff">
-
+  <link rel="alternate" href="https://www.galaxus.ch/de/" hrefLang="de-CH" />
+  <link rel="alternate" href="https://www.galaxus.ch/en/" hrefLang="en-CH" />
+  <link rel="alternate" href="https://www.galaxus.ch/fr/" hrefLang="fr-CH" />
+  <link rel="alternate" href="https://www.galaxus.ch/it/" hrefLang="it-CH" />
+  <link rel="alternate" href="https://www.galaxus.de/" hrefLang="de-DE" />
+  <link rel="alternate" href="https://www.galaxus.at/" hrefLang="de-AT" />
+  <title>galaxus.ch – fast alles für fast jede*n</title>
+  <meta name="description"
+    content="Galaxus ist das grösste Online-Warenhaus der Schweiz und führt ein stetig wachsendes Sortiment für fast alle Bedürfnisse. Stets zu tiefen Preisen und gratis geliefert." />
+  <link rel="canonical" href="https://www.galaxus.ch" />
+  <link rel="preload" as="image"
+    imagesrcset="/im/Files/6/2/9/4/6/2/0/7/DSCF3426%20Kopie21.jpeg?impolicy=PictureComponent&amp;resizeWidth=240 240w, /im/Files/6/2/9/4/6/2/0/7/DSCF3426%20Kopie21.jpeg?impolicy=PictureComponent&amp;resizeWidth=320 320w, /im/Files/6/2/9/4/6/2/0/7/DSCF3426%20Kopie21.jpeg?impolicy=PictureComponent&amp;resizeWidth=480 480w, /im/Files/6/2/9/4/6/2/0/7/DSCF3426%20Kopie21.jpeg?impolicy=PictureComponent&amp;resizeWidth=640 640w, /im/Files/6/2/9/4/6/2/0/7/DSCF3426%20Kopie21.jpeg?impolicy=PictureComponent&amp;resizeWidth=720 720w, /im/Files/6/2/9/4/6/2/0/7/DSCF3426%20Kopie21.jpeg?impolicy=PictureComponent&amp;resizeWidth=800 800w, /im/Files/6/2/9/4/6/2/0/7/DSCF3426%20Kopie21.jpeg?impolicy=PictureComponent&amp;resizeWidth=1080 1080w, /im/Files/6/2/9/4/6/2/0/7/DSCF3426%20Kopie21.jpeg?impolicy=PictureComponent&amp;resizeWidth=1440 1440w, /im/Files/6/2/9/4/6/2/0/7/DSCF3426%20Kopie21.jpeg?impolicy=PictureComponent&amp;resizeWidth=1600 1600w, /im/Files/6/2/9/4/6/2/0/7/DSCF3426%20Kopie21.jpeg?impolicy=PictureComponent&amp;resizeWidth=1800 1800w, /im/Files/6/2/9/4/6/2/0/7/DSCF3426%20Kopie21.jpeg?impolicy=PictureComponent&amp;resizeWidth=2000 2000w, /im/Files/6/2/9/4/6/2/0/7/DSCF3426%20Kopie21.jpeg?impolicy=PictureComponent&amp;resizeWidth=2272 2272w"
+    imagesizes="(min-width: 1600px) 1255px, (min-width: 1400px) 1000px, (min-width: 992px) 668px, 200px" />
+  <link rel="preload" as="image" media="(max-width: 319px)"
+    imagesrcset="/im/Files/2/1/9/7/1/9/9/1/resize_img.php?impolicy=ProductTileImage&amp;resizeWidth=281&amp;cropWidth=281&amp;cropHeight=281 1x, /im/Files/2/1/9/7/1/9/9/1/resize_img.php?impolicy=ProductTileImage&amp;resizeWidth=562&amp;cropWidth=562&amp;cropHeight=562 2x" />
+  <link rel="preload" as="image" media="(min-width: 320px) and (max-width: 991px)"
+    imagesrcset="/im/Files/2/1/9/7/1/9/9/1/resize_img.php?impolicy=ProductTileImage&amp;resizeWidth=281&amp;resizeHeight=281&amp;cropWidth=281&amp;cropHeight=281 1x, /im/Files/2/1/9/7/1/9/9/1/resize_img.php?impolicy=ProductTileImage&amp;resizeWidth=562&amp;resizeHeight=562&amp;cropWidth=562&amp;cropHeight=562 2x" />
+  <link rel="preload" as="image" media="(min-width: 992px) and (max-width: 1399px)"
+    imagesrcset="/im/Files/2/1/9/7/1/9/9/1/resize_img.php?impolicy=ProductTileImage&amp;resizeWidth=234&amp;resizeHeight=234&amp;cropWidth=234&amp;cropHeight=234 1x, /im/Files/2/1/9/7/1/9/9/1/resize_img.php?impolicy=ProductTileImage&amp;resizeWidth=468&amp;resizeHeight=468&amp;cropWidth=468&amp;cropHeight=468 2x" />
+  <link rel="preload" as="image" media="(min-width: 1400px)"
+    imagesrcset="/im/Files/2/1/9/7/1/9/9/1/resize_img.php?impolicy=ProductTileImage&amp;resizeWidth=268&amp;resizeHeight=268&amp;cropWidth=268&amp;cropHeight=268 1x, /im/Files/2/1/9/7/1/9/9/1/resize_img.php?impolicy=ProductTileImage&amp;resizeWidth=536&amp;resizeHeight=536&amp;cropWidth=536&amp;cropHeight=536 2x" />
+  <meta name="next-head-count" content="17" />
+  <meta content="_YBCM7WFf9exvdMJuXNs5rljqZAS8wrufeIWeVB3ohU" name="google-site-verification" />
+  <meta content="Wn05moJ_2g0lCXC1d5EdzTnhPQZzO5iHwDlzUdMSlcQ" name="google-site-verification" />
+  <meta content="3i9c4gDpujmw0rqUDEiJ8Jc7zldVmXBBdtJ689paHdc" name="google-site-verification" />
+  <meta content="B1Qxkm2N2ZRYYPQzLJw1iBzjnaTh_uOYQGuQDjC8i9w" name="google-site-verification" />
+  <meta content="981DFE52913CC5503987B1DB130906D4" name="msvalidate.01" />
+  <meta content="64f73c3385437c96437a02185a04818c" name="p:domain_verify" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/static/images/galaxus/pwa/apple-touch-icon.png?v=2" />
+  <link rel="icon" type="image/png" href="/static/images/galaxus/pwa/favicon-32x32.png?v=2" sizes="32x32" />
+  <link rel="icon" type="image/png" href="/static/images/galaxus/pwa/android-chrome-192x192.png?v=2" sizes="192x192" />
+  <link rel="icon" type="image/png" href="/static/images/galaxus/pwa/favicon-16x16.png?v=2" sizes="16x16" />
+  <link href="/static/meta/manifest_galaxus.json?v=2" rel="manifest" />
+  <link rel="mask-icon" href="/static/images/galaxus/pwa/safari-pinned-tab.svg?v=2" color="#333333" />
+  <link href="/static/images/galaxus/favicon.ico?v=2" rel="shortcut icon" type="image/x-icon" />
+  <meta name="msapplication-TileColor" content="#000000" />
+  <meta name="theme-color" content="#ffffff" />
+  <meta content="/static/meta/msconfig_galaxus.xml?v=2" name="msapplication-config" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="format-detection" content="telephone=no" />
+  <link href="/static/meta/opensearch_galaxus_ch.xml" rel="search" title="DigitecGalaxus Search"
+    type="application/opensearchdescription+xml" />
   <script>
-    window.unicSite = {
-      basePath: '/assets/',
-      utagSrc: '//tags.tiqcdn.com/utag/unic/r16/prod/utag.js',
-    };
+    (function (w, l) {
+      w[l] = w[l] || [];
+      w[l].push({
+        'gtm.start': new Date().getTime(),
+        event: 'gtm.js'
+      });
+    })(window, 'dataLayer');
   </script>
-
   <script>
-    (function (docElem) {
-      //polyfills
-      if (!Object.assign || !docElem.closest || !String.prototype.includes || !window.cancelAnimationFrame || !Array
-        .from || !Array.prototype.find || !window.HTMLPictureElement || !('objectFit' in docElem.style)) {
-        document.write('<script src="/assets/js/polyfills.min.js"><\/script>');
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      window.dataLayer.push(arguments);
+    }
+    gtag('consent', 'default', {
+      "ad_storage": "denied",
+      "analytics_storage": "denied"
+    });
+    gtag("set", "ads_data_redaction", true);
+  </script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Galaxus",
+      "url": "https://www.galaxus.ch",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://www.galaxus.ch/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
       }
-    })(document.documentElement);
+    }
   </script>
-
-  <script>
-    ! function (n) {
-      "use strict";
-      var o = n.document,
-        t = o.documentElement;
-      t.classList.remove("no-js"), t.classList.add("js"), o.fonts && o.fonts.forEach && ! function (n) {
-        o.fonts.forEach(function (o) {
-          n.push(o)
-        }), setTimeout(function () {
-          n.forEach(function (n) {
-            n.load()
-          })
-        }, 0)
-      }([])
-    }(window);
-
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "galaxus",
+      "url": "https://www.galaxus.ch",
+      "logo": "https://www.galaxus.ch/static/images/galaxus/logo.svg"
+    }
   </script>
-
-  <link href="/assets/css/main.min.css?v=86b071d049b5000bdae4065f33a3c518" rel="stylesheet" />
-  <script src="/assets/js/crucial.min.js?v=86b071d049b5000bdae4065f33a3c518"></script>
-
-  <script type="text/javascript">
-    var SC_RumID = 5467;
-  </script>
-  <script type="text/javascript" async src="https://www.statuscake.com/App/RUM/embed.js"></script>
-
-  <style>
-    @font-face {
-      font-family: "Publico Headline Web";
-      src: url("/assets/fonts/publicoHeadline-bold-web.woff2") format("woff2"), url("/assets/fonts/publicoHeadline-bold-web.woff") format("woff");
-      font-style: normal;
-      font-stretch: normal;
-      font-weight: 700;
-    }
-
-    @font-face {
-      font-family: "Publico Headline Web";
-      src: url("/assets/fonts/publicoHeadline-italic-web.woff2") format("woff2"), url("/assets/fonts/publicoHeadline-italic-web.woff") format("woff");
-      font-style: italic;
-      font-stretch: normal;
-      font-weight: 400;
-    }
-
-    @font-face {
-      font-family: "Benton Sans Reg";
-      src: url("/assets/fonts/benton-sans-regular.woff") format("woff");
-      font-style: normal;
-      font-weight: normal;
-    }
-
-    @font-face {
-      font-family: "Benton Sans Reg";
-      src: url("/assets/fonts/benton-sans-italic.woff") format("woff");
-      font-style: italic;
-      font-weight: normal;
-    }
-
-    @font-face {
-      font-family: "Benton Sans Reg";
-      src: url("/assets/fonts/benton-sans-medium.woff") format("woff");
-      font-style: normal;
-      font-weight: 600;
-    }
-  </style>
+  <link rel="preload" href="/_next/static/css/7ef0f697d7a49d40.css" as="style" />
+  <link rel="stylesheet" href="/_next/static/css/7ef0f697d7a49d40.css" data-n-g="" /><noscript data-n-css=""></noscript>
+  <script defer="" nomodule="" src="/_next/static/chunks/polyfills-5cd94c89d3acac5f.js"></script>
+  <script src="/_next/static/chunks/webpack-e8438810582aef27.js" defer=""></script>
+  <script src="/_next/static/chunks/framework-041cb411eb99c607.js" defer=""></script>
+  <script src="/_next/static/chunks/main-41e28ff18ec4ab5f.js" defer=""></script>
+  <script src="/_next/static/chunks/pages/_app-35c13d3fa2630adb.js" defer=""></script>
+  <script src="/_next/static/chunks/8666-e63a432887661557.js" defer=""></script>
+  <script src="/_next/static/chunks/3505-363475cc6aca33ca.js" defer=""></script>
+  <script src="/_next/static/chunks/5384-554397317d3ac67a.js" defer=""></script>
+  <script src="/_next/static/chunks/pages/index-b3ce84eeffdc48fc.js" defer=""></script>
+  <script src="/_next/static/MPeESVRrpmWlMPRsCtdbI/_buildManifest.js" defer=""></script>
+  <script src="/_next/static/MPeESVRrpmWlMPRsCtdbI/_ssgManifest.js" defer=""></script>
+  <script src="/_next/static/MPeESVRrpmWlMPRsCtdbI/_middlewareManifest.js" defer=""></script>
+  
+  <!-- Hier würden noch über 4000 Zeilen an CSS kommen... -->
 </head>
 ```
 </details>
@@ -287,8 +268,6 @@ Folgendes sollte im `<head>`als **minimum** drin sein (abgesehen vom mandatory `
 <head>
   <!-- Stellt sicher, dass das richtige Charset verwendet wird -->
   <meta charset="utf-8" />
-  <!-- Wird nur genutzt, falls ältere IE-Versionen unterstützt werden sollten -->
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
 </head>
 ```
 
@@ -344,15 +323,11 @@ Die aktuelle Browserlandschaft der meistbenutzten Browser sieht so aus:
 > **Note:** Dies ist keine vollständige Liste, sondern beinhaltet nur die meist genutzten Browser
 
 <details>
-  <summary>Browserentwicklung der letzten 10 Jahre</summary>
+  <summary>Browserentwicklung der letzten 13 Jahre</summary>
 
-**1996 - 2009**
-![Browser Usage Statistics - 1996-2009](./assets/browser-stats-1996-2009.png)
-Source: [https://en.wikipedia.org/wiki/Usage_share_of_web_browsers](https://en.wikipedia.org/wiki/Usage_share_of_web_browsers)
-
-**2009 - 2020**
-![Browser Usage Statistics - 2009-2020](./assets/browser-stats-2009-2020.png)
-Source: [https://gs.statcounter.com/browser-market-share#monthly-200901-202003](https://gs.statcounter.com/browser-market-share#monthly-200901-202003)
+**2009 - 2022**
+![Browser Usage Statistics - 2009-2022](./assets/browser-stats-2009-2022.png)
+Source: [https://gs.statcounter.com/browser-market-share#monthly-200901-202204](https://gs.statcounter.com/browser-market-share#monthly-200901-202204)
 </details>
 
 ### HTML(5(.3)): Aktueller Standard
@@ -415,7 +390,7 @@ IDs und Klassen können auf jedes HTML-Element gesetzt werden. Sie dienen zur Id
 
 ### IDs
 
-* Können auf jedes Element mit dem id-Attribut gesetzt werden, sind aber überall optional
+* Können auf jedes Element mit dem `id`-Attribut gesetzt werden, sind aber überall optional
 * Werden zur Identifikation von Elementen benutzt (z.B. um ein bestimmtes Element im JavaScript anzusteuern, oder um es mit CSS zu stylen)
 * Dürfen jeweils nur einmal in einen HTML-Dokument vorkommen
 
@@ -430,7 +405,7 @@ IDs und Klassen können auf jedes HTML-Element gesetzt werden. Sie dienen zur Id
 
 ### Klassen
 
-* Können auf jedem Element mit dem class-Attribut gesetzt werden, sind aber überall optional
+* Können auf jedem Element mit dem `class`-Attribut gesetzt werden, sind aber überall optional
 * Klassen werden fürs Styling bevorzugt
 * Es können mehrere Klassen auf ein Element angewandt werden, diese sind mit einem Leerzeichen zu trennen
 

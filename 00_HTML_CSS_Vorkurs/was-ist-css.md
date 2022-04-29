@@ -46,7 +46,7 @@ Source: [http://vetbossel.in/beginner-tutorial-website/css/css_syntax.html](http
 
 ## Implementation von CSS
 
-* Inline CSS: Direkt im HTML-Element als style-Attribut (nicht empfohlen!)
+* Inline CSS: Direkt im HTML-Element als `style`-Attribut (nicht empfohlen!)
 * Embedded CSS: Benutzung von einem `<style>` tag im HTML-Dokument
 * External CSS: Verlinkung einer externen CSS-Datei (empfohlen)
 
