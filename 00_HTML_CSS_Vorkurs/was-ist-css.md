@@ -394,7 +394,7 @@ input::placeholder {
 - [ ] Entferne die Browserstyles auf der `<ul>`, welche für die Navigation genutzt wird
 - [ ] Die Navigationslinks sollten nicht untereinander stehen, sondern nebeneinander (nutze dafür die `display` property)
 - [ ] Die Navigationslinks sollten ein bisschen abstand zu einander erhalten, nutze dafür `margin` auf den `<li>`
-- [ ] Die Naviagtionslinks sollten jeweils vor ihrem einen Text noch ein `>` haben.
+- [ ] Die Naviagtionslinks sollten jeweils vor ihrem eigenen Text noch ein `>` haben.
 - [ ] Setze die Breite des Bildes (auf der About-Seite) auf _maximal_ 200px
 
 Benutze als Hilfestellung diese Liste von einer Übersicht aller [CSS-Properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference).
